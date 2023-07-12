@@ -1,0 +1,12 @@
+<mat-toolbar color = "primary">Ejercicio Integrador</mat-toolbar>
+
+<div *ngIf="show" class="container">
+  <mat-card *ngFor="let  product of products">
+    <mat-card-title >{{product.name}}</mat-card-title>
+    <mat-card-content>{{product.cost | currency}}</mat-card-content>
+  </mat-card>
+</div>
+
+
+<button class= "button" mat-flat-button color = "primary" (click)="showList()" *ngIf="!show">Show List</button>
+<button class= "button" mat-flat-button  color = "primary" (click)="hiddeList()" *ngIf="show">Hide List</button> 
