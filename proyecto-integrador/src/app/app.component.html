@@ -1,6 +1,6 @@
 <mat-toolbar color = "primary">Ejercicio Integrador</mat-toolbar>
 
-<div *ngIf="show" class="container">
+<div *ngIf="show" class="conteiner">
   <mat-card *ngFor="let  product of products">
     <mat-card-title >{{product.name}}</mat-card-title>
     <mat-card-content>{{product.cost | currency}}</mat-card-content>

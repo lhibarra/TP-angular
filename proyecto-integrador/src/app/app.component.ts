@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Products } from './interface';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,7 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'proyecto-integrador';
   show= false;
-  products = [
+  
+  
+  products: Products[]= [
     {"name": "Azucar", "cost": "800"},
     {"name": "Leche", "cost": "500"},
     {"name": "Yerba", "cost": "900"},
@@ -20,7 +22,7 @@ export class AppComponent {
 
   }
   hiddeList():void{
-    this.show=false;
+    this.show = false;
 
   }
 
